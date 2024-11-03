@@ -1,0 +1,76 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url('./assets/3xl-amoled-background-zm0h60se71s1ep4o.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    position: absolute;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(6, 6rem);
+    justify-content: center;
+    left: 40%;
+    top: 20%;
+    border: 1px solid white;
+    border-radius: 12px;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.prev-value{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 1fr;
+    width: 1fr;
+    background-color: rgba(0, 0, 0, .5);
+    grid-column: 1 / -1;
+    color: rgba(256, 256, 256, .7);
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+    padding-right: .7rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.curr-value {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 1fr;
+    width: 1fr;
+    background-color: rgba(0, 0, 0, .5);
+    grid-column: 1 / -1;
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+    padding-right: .7rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.btn {
+    border: .01rem solid grey;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn:hover, .btn:focus {
+    background-color: rgba(256, 256, 256, .2);
+    scale: 110%;
+}
